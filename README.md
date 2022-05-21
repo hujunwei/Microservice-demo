@@ -1,4 +1,4 @@
-# SpringCloudNetflix
+# microservices-demo
 
 ![image](https://user-images.githubusercontent.com/6505469/169628610-386b8d2a-d08d-4954-89c0-947a4a6f02a7.png)
 
