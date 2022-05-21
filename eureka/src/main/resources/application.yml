@@ -1,0 +1,15 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: microservices-eureka
+
+eureka:
+  instance:
+    hostname: microservices-eureka
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka # 改了端口就要改service url
+      register-with-eureka: false # 当前项目不注册到服务中心，因为我自己就是服务中心
+      fetch-registry: false # 当前项目不从服务中心拿东西，因为我自己就是服务中心
