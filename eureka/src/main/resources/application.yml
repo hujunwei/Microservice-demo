@@ -10,6 +10,6 @@ eureka:
     hostname: microservices-eureka
   client:
     service-url:
-      defaultZone: http://127.0.0.1:7000/eureka # 改了端口就要改service url
-      register-with-eureka: false # 当前项目不注册到服务中心，因为我自己就是服务中心
-      fetch-registry: false # 当前项目不从服务中心拿东西，因为我自己就是服务中心
+      defaultZone: http://127.0.0.1:7000/eureka # Port changed in eureka, need change default service url
+      register-with-eureka: false # this is the eureka server, so not register itself
+      fetch-registry: false # this is the eureka server, it does not need to find any service from eureka
